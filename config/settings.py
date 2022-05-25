@@ -75,26 +75,26 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#    }
-#}
-
 DATABASES = {
     'default': {
-        'ENGINE': 'sql_server.pyodbc',
-        'NAME': 'TestDjango',
-        'USER': 'sa',
-        'PASSWORD': '',
-       'HOST': '192.168.10.22\SQL2017',
-
-        'OPTIONS': {
-            'driver': 'ODBC Driver 17 for SQL Server',
-        },
-    },
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
 }
+
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'sql_server.pyodbc',
+#        'NAME': 'TestDjango',
+#        'USER': 'sa',
+#        'PASSWORD': '',
+#       'HOST': '192.168.10.22\SQL2017',
+#
+#        'OPTIONS': {
+#            'driver': 'ODBC Driver 17 for SQL Server',
+#        },
+#    },
+#}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
